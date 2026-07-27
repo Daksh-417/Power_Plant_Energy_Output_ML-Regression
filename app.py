@@ -150,7 +150,7 @@ FEATURE_META = {
 
 @st.cache_resource
 def load_data_and_model():
-    df = pd.read_csv('Power_Plant_Energy_Output_ML-Regression.csv')
+    df = pd.read_csv('Power_Plant_Energy_Output.csv')
     df = df.drop_duplicates().reset_index(drop=True)
 
     X = df.drop('PE', axis=1)
